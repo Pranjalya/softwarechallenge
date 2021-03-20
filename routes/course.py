@@ -7,7 +7,7 @@ from http import HTTPStatus
 import data
 
 
-@app.route("/course/<int:id>", methods=['GET'])
+@app.route("/course/<int:id>", methods=["GET"])
 def get_course(id):
     """Get a course by id.
 
@@ -25,7 +25,7 @@ def get_course(id):
     # YOUR CODE HERE
 
 
-@app.route("/course", methods=['GET'])
+@app.route("/course", methods=["GET"])
 def get_courses():
     """Get a page of courses, optionally filtered by title words (a list of
     words separated by commas".
@@ -51,7 +51,7 @@ def get_courses():
     # YOUR CODE HERE
 
 
-@app.route("/course", methods=['POST'])
+@app.route("/course", methods=["POST"])
 def create_course():
     """Create a course.
     :return: The course object (see the challenge notes for examples)
@@ -67,7 +67,7 @@ def create_course():
     # YOUR CODE HERE
 
 
-@app.route("/course/<int:id>", methods=['PUT'])
+@app.route("/course/<int:id>", methods=["PUT"])
 def update_course(id):
     """Update a a course.
     :param int id: The record id.
@@ -86,7 +86,7 @@ def update_course(id):
     # YOUR CODE HERE
 
 
-@app.route("/course/<int:id>", methods=['DELETE'])
+@app.route("/course/<int:id>", methods=["DELETE"])
 def delete_course(id):
     """Delete a course
     :return: A confirmation message (see the challenge notes for examples)
@@ -98,4 +98,3 @@ def delete_course(id):
     None
     """
     # YOUR CODE HERE
-
