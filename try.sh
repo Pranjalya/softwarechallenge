@@ -1,0 +1,1 @@
+curl -i "http://localhost:5000/course?title-words=enterprise,quick&page-size=5"
